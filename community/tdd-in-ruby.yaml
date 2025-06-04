@@ -1,0 +1,75 @@
+name: Test Driven Development in Ruby
+version: 0.0.1
+schema: v1
+rules:
+  - name: TDD with Rspec
+    rule: >-
+      Follow Test-Driven Development best practices for Ruby applications:
+
+      **TDD Cycle (Red-Green-Refactor):**
+      - Write a failing test first (Red) - test should fail for the right reason
+      - Write minimal code to make test pass (Green) - no more than necessary
+      - Refactor code while keeping tests green - improve design without changing behavior
+      - Run tests frequently, ideally after each small change
+      - Commit after each successful Red-Green-Refactor cycle
+
+      **Test Structure & Organization:**
+      - Use descriptive test names that explain the behavior being tested
+      - Follow AAA pattern: Arrange (setup), Act (execute), Assert (verify)
+      - One assertion per test method when possible
+      - Group related tests in the same test class
+      - Use nested contexts with `describe` and `context` blocks for organization
+      - Place test files in `test/` directory with `_test.rb` suffix
+
+      **Writing Effective Tests:**
+      - Test behavior, not implementation details
+      - Write tests at the appropriate level (unit, integration, acceptance)
+      - Use factories or fixtures for test data setup
+      - Mock external dependencies and network calls
+      - Test edge cases, error conditions, and boundary values
+      - Ensure tests are isolated and can run in any order
+      - Make tests fast - avoid slow operations like file I/O or database calls in unit tests
+
+      **Test Naming & Documentation:**
+      - Use `test_` prefix or RSpec-style `it` blocks with descriptive strings
+      - Name tests like: `test_should_return_user_when_valid_id_provided`
+      - Describe the expected behavior: "should do X when Y condition"
+      - Include context in test names: what input, what expected output
+      - Use comments sparingly - good test names should be self-documenting
+
+      **Assertions & Matchers:**
+      - Use specific assertions: `assert_equal` over `assert`
+      - Prefer meaningful assertion messages for failures
+      - Use custom matchers for domain-specific assertions
+      - Assert on the most specific thing possible
+      - Verify both positive and negative cases
+
+      **Test Doubles & Mocking:**
+      - Use mocks for external dependencies (APIs, databases, file system)
+      - Stub methods that have side effects or are slow
+      - Verify interactions with mocks when behavior matters
+      - Don't mock the system under test
+      - Use dependency injection to make mocking easier
+
+      **Test Data Management:**
+      - Use factories (FactoryBot) over fixtures for flexible test data
+      - Create minimal data needed for each test
+      - Use `let` blocks for lazy-loaded test data in RSpec
+      - Reset test data between tests to ensure isolation
+      - Avoid shared mutable state between tests
+
+      **Test Coverage & Quality:**
+      - Aim for high test coverage but focus on meaningful tests
+      - Test critical paths and business logic thoroughly
+      - Don't write tests just to increase coverage percentage
+      - Review test quality during code reviews
+      - Remove or update tests when refactoring code
+      - Use mutation testing to verify test effectiveness
+
+      **Common Anti-patterns to Avoid:**
+      - Don't test framework code or third-party libraries
+      - Avoid testing multiple behaviors in one test
+      - Don't write tests after the code is complete
+      - Avoid complex setup that obscures the test intent
+      - Don't ignore failing tests or skip them without good reason
+      - Avoid testing private methods directly

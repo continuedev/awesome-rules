@@ -1,0 +1,113 @@
+name: vitest-unit-testing
+version: 0.0.1
+schema: v1
+rules:
+  - name: vitest-setup-and-configuration
+    rule: >-
+      Configure Vitest properly for optimal testing:
+
+      **Project Setup:**
+      - Use Vitest as the primary testing framework for fast, modern unit testing
+      - Configure `vitest.config.ts` with proper TypeScript support and module resolution
+      - Set up test environment in config: `environment: 'jsdom'` for React components
+      - Enable code coverage with `coverage.provider: 'v8'` for accurate reporting
+      - Use `globals: true` to avoid importing test functions in every file
+
+      **File Organization:**
+      - Place test files adjacent to source files with `.test.ts` or `.spec.ts` suffix
+      - Use `__tests__` directory for complex test suites when needed
+      - Match test file names to the module being tested: `user.ts` → `user.test.ts`
+      - Group related utilities in `test-utils/` directory for reusable test helpers
+
+  - name: vitest-test-structure
+    rule: >-
+      Structure Vitest tests for clarity and maintainability:
+
+      **Test Organization:**
+      - Use `describe()` blocks to group related tests logically
+      - Use `test()` or `it()` for individual test cases - prefer `test()` for consistency
+      - Include the function/method name being tested in test descriptions
+      - Follow pattern: `test('functionName should do X when Y condition')`
+      - Use `describe.each()` and `test.each()` for parameterized tests
+
+      **Test Lifecycle:**
+      - Use `beforeEach()` for test setup that runs before each test
+      - Use `afterEach()` for cleanup after each test
+      - Use `beforeAll()`/`afterAll()` sparingly for expensive setup/teardown
+      - Prefer isolated test setup over shared state between tests
+
+  - name: vitest-assertions-and-matchers
+    rule: >-
+      Use Vitest assertions effectively for clear, meaningful tests:
+
+      **Assertion Best Practices:**
+      - Use specific matchers: `toBe()` for primitives, `toEqual()` for objects
+      - Prefer `toBeNull()`, `toBeUndefined()`, `toBeTruthy()` over generic equality
+      - Use `toThrow()` and `toThrowError()` with specific error messages or types
+      - Use `toHaveLength()` for arrays, `toContain()` for array membership
+      - Use `toMatchObject()` for partial object matching in complex objects
+
+      **Custom Matchers:**
+      - Create custom matchers for domain-specific assertions
+      - Use `expect.extend()` to add reusable custom matchers
+      - Name custom matchers clearly: `toBeValidUser()`, `toHaveCorrectFormat()`
+      - Include helpful error messages in custom matchers for better debugging
+
+  - name: vitest-mocking-and-testing-doubles
+    rule: >-
+      Handle mocking and test doubles effectively in Vitest:
+
+      **Module Mocking:**
+      - Use `vi.mock()` to mock entire modules at the top level
+      - Use `vi.mocked()` for TypeScript support when mocking
+      - Prefer `vi.fn()` for creating mock functions with call tracking
+      - Use `mockResolvedValue()` and `mockRejectedValue()` for async mocks
+
+      **Dependency Injection:**
+      - Mock external dependencies (APIs, databases, file system)
+      - Use `vi.stubGlobal()` for mocking global variables
+      - Mock timers with `vi.useFakeTimers()` and `vi.advanceTimersByTime()`
+      - Reset mocks between tests using `vi.clearAllMocks()` in `beforeEach()`
+
+      **Spying:**
+      - Use `vi.spyOn()` to spy on existing methods without full mocking
+      - Verify function calls with `toHaveBeenCalledWith()` and `toHaveBeenCalledTimes()`
+      - Restore original implementations with `vi.restoreAllMocks()` after tests
+
+  - name: vitest-async-testing
+    rule: >-
+      Handle asynchronous code properly in Vitest tests:
+
+      **Async/Await Patterns:**
+      - Always use `async/await` for testing asynchronous code
+      - Use `await expect().resolves.toBe()` for testing resolved promises
+      - Use `await expect().rejects.toThrow()` for testing rejected promises
+      - Test both success and error cases for async functions
+
+      **Waiting and Timeouts:**
+      - Use `waitFor()` from testing library for DOM updates
+      - Set appropriate timeouts for slow operations
+      - Use `vi.waitFor()` for waiting on condition changes
+      - Avoid arbitrary delays with `setTimeout()` in tests
+
+  - name: vitest-performance-and-reliability
+    rule: >-
+      Ensure Vitest tests are fast, reliable, and maintainable:
+
+      **Test Performance:**
+      - Keep unit tests fast - under 100ms per test
+      - Use `concurrent` modifier for independent tests that can run in parallel
+      - Mock expensive operations (network calls, file I/O, complex computations)
+      - Use `test.skip()` or `test.todo()` for temporarily disabled tests
+
+      **Test Reliability:**
+      - Make tests deterministic - avoid random data or timing dependencies
+      - Ensure tests can run in any order without affecting each other
+      - Use fixed test data instead of dynamic dates or random values
+      - Clean up side effects in `afterEach()` hooks
+
+      **Debugging and Development:**
+      - Use `test.only()` to run single tests during development
+      - Use `console.log()` or debugger statements for debugging failing tests
+      - Run tests in watch mode during development with `vitest --watch`
+      - Use `--reporter=verbose` for detailed test output when debugging

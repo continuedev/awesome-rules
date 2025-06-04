@@ -1,0 +1,100 @@
+name: Ruby
+version: 0.0.1
+schema: v1
+rules:
+  - name: clean ruby
+    rule: >-
+      Follow these Ruby best practices for clean, maintainable code:
+
+      **Code Structure & Organization:**
+      - Use 2 spaces for indentation, never tabs
+      - Keep lines under 100 characters
+      - End files with a newline
+      - Add `# frozen_string_literal: true` at the top of every file
+      - Use `snake_case` for variables/methods, `CamelCase` for classes/modules, `SCREAMING_SNAKE_CASE` for constants
+      - Group related methods together and use visibility modifiers (`private`, `protected`) appropriately
+
+      **Method Design:**
+      - Keep methods under 20 lines with single responsibility
+      - Use descriptive names that clearly express intent
+      - Prefer guard clauses and early returns for edge cases
+      - Extract complex logic into well-named helper methods
+      - Limit cyclomatic complexity under 7, perceived complexity under 8
+
+      **String & Syntax:**
+      - Use single quotes for non-interpolated strings, double quotes for interpolation
+      - Use spaces around operators, after commas/colons/semicolons
+      - No trailing whitespace at line ends or blank lines
+      - Prefer `%w()` for word arrays, `%i()` for symbol arrays
+
+      **Error Handling:**
+      - Rescue specific exceptions, never bare `rescue` or `Exception`
+      - Provide descriptive error messages and log appropriately
+      - Use guard clauses to handle edge cases early
+
+      **Testing Requirements:**
+      - Write tests for all new code using TDD approach
+      - Mock external API calls, never allow real network requests
+      - Place tests in `test/` directory with `_test.rb` suffix
+      - Use `setup`/`teardown` for test preparation/cleanup
+      - Add empty line before assertions for readability
+      - Limit test methods to 5 assertions maximum
+      - Maintain high test coverage, especially for modified files
+
+      **Documentation:**
+      - Add comments for complex or non-obvious code
+      - Document public methods, parameters, and return values
+      - Use meaningful variable and method names that reduce need for comments
+
+  - name: effective ruby
+    rule: >-
+      Apply Effective Ruby principles for idiomatic and performant code:
+
+      **Ruby Fundamentals:**
+      - Understand that everything in Ruby is an object with a class
+      - Use symbols instead of strings for identifiers and hash keys
+      - Prefer `&&` and `||` over `and` and `or` for boolean operations
+      - Use `!!` to convert objects to boolean when needed
+      - Understand truthiness: only `nil` and `false` are falsy
+
+      **Collections & Iteration:**
+      - Prefer `each` over `for` loops
+      - Use `map` for transformation, `select` for filtering, `reject` for exclusion
+      - Prefer `each_with_object` or `reduce` over manual accumulation
+      - Use `fetch` instead of `[]` when you want to handle missing keys explicitly
+      - Consider `Set` for membership testing instead of arrays
+
+      **Classes & Modules:**
+      - Prefer composition over inheritance when possible
+      - Use modules for mixins and namespacing
+      - Implement `==`, `eql?`, and `hash` consistently for value objects
+      - Override `to_s` for user-friendly string representation
+      - Use `attr_reader`, `attr_writer`, `attr_accessor` instead of manual getters/setters
+
+      **Metaprogramming & Dynamic Features:**
+      - Use `define_method` when method names are determined at runtime
+      - Prefer `send` over `eval` for dynamic method calls
+      - Use `method_missing` judiciously and always implement `respond_to_missing?`
+      - Understand the method lookup chain and `super`
+      - Use `alias_method` instead of `alias` for programmatic aliasing
+
+      **Performance & Memory:**
+      - Use string interpolation instead of concatenation for performance
+      - Prefer lazy evaluation with `Enumerator::Lazy` for large datasets
+      - Use `freeze` for immutable objects to prevent modification
+      - Consider `String#+` vs `String#<<` based on mutability needs
+      - Use `||=` for memoization patterns
+
+      **Exception Handling:**
+      - Create custom exception classes that inherit from `StandardError`
+      - Use `ensure` for cleanup code that must run
+      - Prefer `raise` over `fail` for consistency
+      - Use `retry` with counters to handle transient failures
+      - Handle exceptions at the appropriate abstraction level
+
+      **Blocks & Procs:**
+      - Understand the difference between blocks, procs, and lambdas
+      - Use `yield` when you always expect a block
+      - Use `block_given?` to handle optional blocks
+      - Prefer lambdas over procs for strict argument checking
+      - Use `&:symbol` shorthand for simple method calls
