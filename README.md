@@ -31,7 +31,7 @@ We welcome contributions from everyone! Please follow these guidelines:
 - **General Guidelines:**  
   - Use clear, concise language.
   - Include a brief description at the top of each rule file.
-  - Where possible, provide examples or rationale.
+  - Where possible, provide examples or rationale in your pull request.
   - Follow the existing folder and file naming conventions.
 
 ## License
