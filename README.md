@@ -1,43 +1,160 @@
-# A collection of rules templates
+# Awesome Rules [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-A collection of community and official rules for AI coding assistants, designed to improve code quality, consistency, and development practices across different languages and frameworks.
+This collection focuses on rules written in standard markdown format with YAML frontmatter, compatible with various AI coding assistants like Cursor, Continue.dev, and others following the [amplified.dev](https://amplified.dev/) standard.
 
-## What are Rules?
+## Why Rules?
 
-Rules are configuration files that guide AI coding assistants in generating better code by establishing standards, conventions, and best practices. They help ensure consistent code style, proper testing approaches, security considerations, and framework-specific patterns.
+Rules are more than just suggestions; they’re essential building blocks that shape how your assistant interprets your requests. Clear, actionable rules help the agent consistently produce code that meets your standards, avoids common pitfalls, and aligns with your team’s workflows.
 
-For more detailed information about how rules work, see the [Continue documentation on rules](https://docs.continue.dev/customize/deep-dives/rules).
+> [Read the Anatomy of Good Rules](https://blog.continue.dev/the-anatomy-of-rules-writing-effective-boundaries-for-ai-agents-in-ruby/)
 
-## Repository Structure
+## Rules
+### General
+- [Task Management](./rules/task-management/)
 
-This repository is a centralized source for both community-driven and official rules for AI coding assistants. Our goal is to help developers, organizations, and open source communities define, share, and enforce best practices and guidelines for AI-powered coding tools.
+<!-- Examples for General -->
+<!-- - **Coding Standards** - Enforce consistent code style and best practices -->
+<!-- - **Error Handling** - Guidelines for robust error handling patterns -->
+<!-- - **Performance** - Rules for writing efficient code -->
+<!-- - **Security** - Security-focused development practices -->
+<!-- - **Agent Enablement** - AI enablement and guidelines  -->
 
-## How to Use This Repository
+### Language Specific
+- [Ruby](.rules/ruby/)
 
-- **Browse Rules:** Explore the `community/` folder for rules contributed by the community, and the `global/` folder for official rules recognized by the Continue team.
-- **Adopt Rules:** Copy or reference rules in your own AI coding assistant workflows.
-- **Contribute:** Share your own rules or help improve existing ones!
+<!-- Examples for Language Specific -->
+<!-- - **Coding Standards** - Enforce consistent code style and best practices -->
+<!-- - **Error Handling** - Guidelines for robust error handling patterns -->
+<!-- - **Performance** - Rules for writing efficient code -->
+<!-- - **Security** - Security-focused development practices -->
+<!-- - **Agent Enablement** - AI enablement and guidelines  -->
+
+### Framework Specific
+- [Zuplo](.rules/zuplo/)
+
+<!-- Examples for Language Specific -->
+<!-- - **Coding Standards** - Enforce consistent code style and best practices -->
+<!-- - **Error Handling** - Guidelines for robust error handling patterns -->
+<!-- - **Performance** - Rules for writing efficient code -->
+<!-- - **Security** - Security-focused development practices -->
+<!-- - **Agent Enablement** - AI enablement and guidelines  -->
+
+### Code Quality
+
+<!-- // remove examples after first contirbution. -->
+
+- **Linting Rules** - Integration with ESLint, Prettier, and other tools
+- **Type Safety** - Strict typing guidelines
+- **Code Review** - Automated code review suggestions
+- **Refactoring** - Safe refactoring patterns
+
+
+### Documentation
+
+<!-- // remove examples after first contirbution. -->
+
+- **API Documentation** - Standards for documenting APIs
+- **Code Comments** - When and how to write effective comments
+- **README Standards** - Project documentation guidelines
+- **Changelog** - Maintaining project history
+
+### Testing
+
+<!-- // remove examples after first contirbution. -->
+
+- **Unit Testing** - Test structure and coverage guidelines
+- **Integration Testing** - End-to-end testing patterns
+- **Test Data** - Managing test fixtures and mocks
+- **TDD Guidelines** - Test-driven development practices
+
+### DevOps
+
+<!-- // remove examples after first contirbution. -->
+
+- **CI/CD** - Continuous integration and deployment rules
+- **Docker** - Container best practices
+- **Infrastructure** - Infrastructure as code guidelines
+- **Monitoring** - Observability and logging standards
+
+## Using Rules Locally
+
+### [rules-cli](https://rules.so)
+
+The `rules-cli` helps you fetch and manage AI coding assistant rules locally.
+
+`rules` is a CLI built for managing rules across any AI developer tool. Rules are markdown files that encode workflows, preferences, tech stack details, and more in plain natural language so you can get better help from LLMs.
+
+### Install `rules`
+
+The `rules` CLI can be installed using NPM:
+
+```bash
+npm i -g rules-cli
+```
+
+### Adding Rules to Your Project
+
+To download rules to your repository you can use `rules add`. For example:
+
+```bash
+rules add starter/nextjs-rules
+```
+
+This will add them to your project in a local `.rules` folder.
+
+You can also download from GitHub rather than the rules registry:
+
+```bash
+rules add gh:continuedev/rules
+```
+
+From there you can create a rules folder in your project root and add rule files. The exact folder structure may vary depending on your AI coding assistant:
+
+**For Cursor:**
+```
+your-project/
+├── .cursor/
+    └── rules/
+        ├── coding-standards.mdc
+        ├── testing-guidelines.mdc
+        └── documentation-rules.mdc
+```
+
+**For Continue:**
+```
+your-project/
+├── .continue/
+│   └── rules/
+│       ├── coding-standards.md
+│       ├── testing-guidelines.md
+│       └── documentation-rules.md
+```
+
+**For other AI assistants:**
+Check your specific tool's documentation for the correct folder structure.
 
 ## Contributing
 
-We welcome contributions from everyone! Please follow these guidelines:
+We welcome contributions, especially if you have great rules to share. 
 
-- **Community Rules:**  
-  If you want to contribute a rule or guideline for general use, open a Pull Request (PR) adding your file(s) to the [`community/`](./community) folder.
+1. Fork this repository
+2. Create your rule in the `rules` folder. The folder name should follow this pattern: `technology-focus-description` For example: `typescript-type-standards-practices`
+4. Update the main README.md file, adding your contribution to the appropriate category.
+5. Ensure your contribution follows the guidelines in the `CONTRIBUTING.md` file in the `.continue/rules` file at the root of this repository.
+6. Submit a pull request with a description, PRs with no description or clear title will be marked as spam and closed.
 
-- **Official/Global Rules:**  
-  If you represent an open source community or organization and want your rules to appear as an official rule for Continue users, open a PR to the [`global/`](./global) folder. Please include a short description and any relevant links or documentation.
-
-- **General Guidelines:**  
-  - Use clear, concise language.
-  - Include a brief description at the top of each rule file.
-  - Where possible, provide examples or rationale in your pull request.
-  - Follow the existing folder and file naming conventions.
+Please refer to the `CONTRIBUTING.md` file in the `.continue/rules` for details on how to submit rules, report issues, and contribute to the project.
 
 ## License
 
-This project is licensed under the [CC0-1.0 license](./LICENSE).
+This project is licensed under [CC0 1.0 Universal](LICENSE) - see the LICENSE file for details.
 
-## Related Projects
+## Acknowledgments
 
-- [Continue](https://github.com/continuedev/continue) – The open source AI coding assistant.
+- [amplified.dev](https://amplified.dev/), the coding manifesto that inspired this repo
+- [PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) was an inspiration for the structure of this repo
+- All contributors who help make this list awesome
+
+---
+
+**Note**: This is a community-maintained collection of rules. Read and sign amplified.dev pledge, visit [amplified.dev](https://amplified.dev/).
