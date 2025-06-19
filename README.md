@@ -78,11 +78,9 @@ Rules are more than just suggestions; they’re essential building blocks that s
 
 ## Using Rules Locally
 
-### [rules-cli](https://rules.so)
+### [`rules` CLI](https://rules.so)
 
-The `rules-cli` helps you fetch and manage AI coding assistant rules locally.
-
-`rules` is a CLI built for managing rules across any AI developer tool. Rules are markdown files that encode workflows, preferences, tech stack details, and more in plain natural language so you can get better help from LLMs.
+The `rules` CLI helps you fetch and manage rules locally, across any AI coding assistant.
 
 ### Install `rules`
 
@@ -108,9 +106,15 @@ You can also download from GitHub rather than the rules registry:
 rules add gh:continuedev/rules
 ```
 
-From there you can create a rules folder in your project root and add rule files. The exact folder structure may vary depending on your AI coding assistant:
+From there you can use `rules render` to translate into the format of your choice:
 
 **For Cursor:**
+```bash
+rules render cursor
+```
+
+will create the following folder structure:
+
 ```
 your-project/
 ├── .cursor/
@@ -121,6 +125,12 @@ your-project/
 ```
 
 **For Continue:**
+```bash
+rules render continue
+```
+
+will create the following folder structure:
+
 ```
 your-project/
 ├── .continue/
@@ -157,4 +167,4 @@ This project is licensed under [CC0 1.0 Universal](LICENSE) - see the LICENSE fi
 
 ---
 
-**Note**: This is a community-maintained collection of rules. Read and sign amplified.dev pledge, visit [amplified.dev](https://amplified.dev/).
+**Note**: This is a community-maintained collection of rules. To read and sign the amplified.dev pledge, visit [amplified.dev](https://amplified.dev/).
