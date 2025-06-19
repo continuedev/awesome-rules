@@ -141,7 +141,7 @@ your-project/
 ```
 
 **For other AI assistants:**
-Check your specific tool's documentation for the correct folder structure.
+See [the docs](https://www.rules.so/#render-rules) for the full list of supported formats.
 
 ## Contributing
 
