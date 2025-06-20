@@ -1,6 +1,5 @@
 ---
 name: Clean Ruby
-description: Rules generated from clean ruby.
 ---
 - Write clean and readable ruby code.
 - Follow the Single Responsibility Principle; each method should do one thing.
