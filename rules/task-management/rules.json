@@ -1,0 +1,7 @@
+{
+  "name": "task-management/agent-task-management-rules",
+  "description": "Best practices for task management and PRD creation",
+  "version": "0.0.1",
+  "author": "Task Management Team",
+  "tags": ["task-management", "prd", "planning", "project-management", "agent"]
+}

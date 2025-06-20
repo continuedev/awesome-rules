@@ -1,0 +1,7 @@
+{
+  "name": "monitoring/observability-practices-rules",
+  "description": "Best practices for monitoring and observability",
+  "version": "0.0.1",
+  "author": "Monitoring Team",
+  "tags": ["monitoring", "observability", "metrics", "logging", "devops"]
+}

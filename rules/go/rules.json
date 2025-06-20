@@ -1,0 +1,7 @@
+{
+  "name": "go/go-programming-rules",
+  "description": "Best practices for Go programming and microservices",
+  "version": "0.0.1",
+  "author": "Go Team",
+  "tags": ["go", "golang", "microservices", "backend", "best-practices"]
+}

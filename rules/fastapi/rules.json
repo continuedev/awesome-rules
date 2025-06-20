@@ -1,0 +1,7 @@
+{
+  "name": "fastapi/fastapi-async-development-rules",
+  "description": "Best practices for FastAPI async development",
+  "version": "0.0.1",
+  "author": "FastAPI Team",
+  "tags": ["fastapi", "python", "async", "api", "backend"]
+}

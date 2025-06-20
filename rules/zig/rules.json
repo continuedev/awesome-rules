@@ -1,0 +1,7 @@
+{
+  "name": "zig/zig-programming-rules",
+  "description": "Best practices for Zig programming and memory management",
+  "version": "0.0.1",
+  "author": "Zig Team",
+  "tags": ["zig", "comptime", "memory-management", "systems-programming", "performance"]
+}

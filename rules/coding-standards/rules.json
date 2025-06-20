@@ -1,0 +1,7 @@
+{
+  "name": "coding-standards/general-best-practices-rules",
+  "description": "General coding standards and best practices",
+  "version": "0.0.1",
+  "author": "Standards Team",
+  "tags": ["coding-standards", "best-practices", "code-quality", "conventions", "style-guide"]
+}

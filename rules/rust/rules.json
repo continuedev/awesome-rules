@@ -1,0 +1,7 @@
+{
+  "name": "rust/rust-programming-rules",
+  "description": "Best practices for Rust programming, async, and ownership",
+  "version": "0.0.1",
+  "author": "Rust Team",
+  "tags": ["rust", "async", "ownership", "memory-safety", "systems-programming"]
+}

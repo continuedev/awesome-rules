@@ -1,0 +1,7 @@
+{
+  "name": "supabase/supabase-next-auth-rules",
+  "description": "Best practices for Supabase with Next.js authentication",
+  "version": "0.0.1",
+  "author": "Supabase Team",
+  "tags": ["supabase", "nextjs", "authentication", "database", "backend"]
+}

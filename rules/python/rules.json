@@ -1,0 +1,7 @@
+{
+  "name": "python/python-development-rules",
+  "description": "Best practices for Python development including Django, data science, and web scraping",
+  "version": "0.0.1",
+  "author": "Python Team",
+  "tags": ["python", "django", "data-science", "web-scraping", "jupyter"]
+}

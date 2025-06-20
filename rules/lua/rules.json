@@ -1,0 +1,7 @@
+{
+  "name": "lua/lua-scripting-rules",
+  "description": "Best practices for Lua scripting and performance optimization",
+  "version": "0.0.1",
+  "author": "Lua Team",
+  "tags": ["lua", "scripting", "performance", "optimization", "best-practices"]
+}

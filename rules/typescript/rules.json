@@ -1,0 +1,7 @@
+{
+  "name": "typescript/typescript-development-rules",
+  "description": "Best practices for TypeScript development and type safety",
+  "version": "0.0.1",
+  "author": "TypeScript Team",
+  "tags": ["typescript", "type-safety", "nodejs", "javascript", "best-practices"]
+}

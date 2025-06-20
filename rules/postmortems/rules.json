@@ -1,0 +1,7 @@
+{
+  "name": "postmortems/debugging-postmortems-rules",
+  "description": "Best practices for debugging and postmortem analysis",
+  "version": "0.0.1",
+  "author": "Postmortems Team",
+  "tags": ["postmortems", "debugging", "incident-response", "analysis", "reliability"]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "express/express-api-development-rules",
+  "description": "Best practices for Express.js API development",
+  "version": "0.0.1",
+  "author": "Express Team",
+  "tags": ["express", "nodejs", "api", "backend", "javascript"]
+}

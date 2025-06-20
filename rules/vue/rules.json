@@ -1,0 +1,7 @@
+{
+  "name": "vue/vue-composition-api-rules",
+  "description": "Best practices for Vue.js Composition API",
+  "version": "0.0.1",
+  "author": "Vue Team",
+  "tags": ["vue", "composition-api", "frontend", "javascript", "reactive"]
+}

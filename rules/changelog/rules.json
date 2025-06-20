@@ -1,0 +1,7 @@
+{
+  "name": "changelog/keep-a-changelog-rules",
+  "description": "Best practices for maintaining changelogs and version history",
+  "version": "0.0.1",
+  "author": "Changelog Team",
+  "tags": ["changelog", "versioning", "documentation", "release-notes", "history"]
+}
