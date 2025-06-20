@@ -1,14 +1,7 @@
 {
-  "name": "zuplo-gateway-rules",
+  "name": "zuplo/gateway-rules",
   "description": "Best practices for building API gateways on Zuplo",
   "version": "0.0.1", 
   "author": "Zuplo",
-  "rules": [
-    "zuplo-api-gateway-setup.md",
-    "zuplo-security-policies.md", 
-    "zuplo-performance-optimization.md",
-    "zuplo-deployment-gitops.md"
-  ],
-  "tags": ["api-gateway", "gateway", "zuplo", "security", "gitops"],
-  "target_audience": "developers building on Zuplo platform"
+  "tags": ["api-gateway", "gateway", "zuplo", "security", "gitops"]
 }
