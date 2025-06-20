@@ -1,0 +1,33 @@
+---
+description: Guidelines for writing Effective Go code
+alwaysApply: false
+
+---
+-	Use gofmt to format your code automatically. Don’t fight the formatter.
+-	Write clear and concise package names. Use lowercase, single-word names without underscores -r mixed caps.
+-	Follow Go naming conventions:
+-	Use MixedCaps or mixedCaps for multiword names, not underscores
+-	Capitalize exported names
+-	Use short, descriptive names for variables and functions
+-	Utilize Go’s built-in error handling. Return errors as values, not exceptions.
+-	Take advantage of multiple return values, especially for error handling.
+-	Use defer for cleanup operations like closing files or unlocking mutexes.
+-	Prefer composition over inheritance. Use embedding to include functionality from other -ypes.
+-	Make use of interfaces for abstraction. Define interfaces for the methods you need.
+-	Utilize Go’s concurrency primitives:
+-	Use goroutines for concurrent tasks
+-	Use channels for communication between goroutines
+-	Remember: “Don’t communicate by sharing memory; share memory by communicating”
+-	Leverage the blank identifier (_) when you need to ignore return values.
+-	Use type switches to handle multiple types in interfaces.
+-	Write clear documentation comments for packages, functions, and types.
+-	Avoid unnecessary else clauses. Handle errors early and return.
+-	Use named return values when it improves clarity.
+-	Make good use of the init() function for package initialization when needed.
+-	Remember that semicolons are mostly implicit in Go. Don’t add them unnecessarily.
+-	Use the built-in testing package for unit tests.
+-	Utilize Go’s powerful slice and map types effectively.
+-	Remember to check for nil before dereferencing pointers.
+-	Use the context package for managing cancellations and deadlines across API boundaries.
+-	Follow the principle of “Accept interfaces, return structs” in your API design.
+-	Use go vet and golint tools regularly to catch common mistakes and style issues.
