@@ -58,10 +58,12 @@ Rules are more than just suggestions; they’re essential building blocks that s
 
 <!-- // remove examples after first contirbution. -->
 
-- **API Documentation** - Standards for documenting APIs
-- **Code Comments** - When and how to write effective comments
-- **README Standards** - Project documentation guidelines
-- **Changelog** - Maintaining project history
+<!--- **API Documentation** - Standards for documenting APIs-->
+<!--- **Code Comments** - When and how to write effective comments-->
+<!--- **README Standards** - Project documentation guidelines-->
+<!--- **Changelog** - Maintaining project history-->
+
+- [post-mortems](./rules/debugging-postmortems)
 
 ### Testing
 
