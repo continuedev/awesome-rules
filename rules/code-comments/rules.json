@@ -1,0 +1,7 @@
+{
+  "name": "code-comments/effective-comments-rules",
+  "description": "Best practices for writing effective code comments",
+  "version": "0.0.1",
+  "author": "Code Quality Team",
+  "tags": ["comments", "documentation", "code-quality", "maintainability", "best-practices"]
+}

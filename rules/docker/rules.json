@@ -1,0 +1,7 @@
+{
+  "name": "docker/dockerfile-best-practices-rules",
+  "description": "Best practices for Docker and containerization",
+  "version": "0.0.1",
+  "author": "Docker Team",
+  "tags": ["docker", "containers", "dockerfile", "containerization", "devops"]
+}

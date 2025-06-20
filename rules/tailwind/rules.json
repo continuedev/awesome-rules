@@ -1,0 +1,7 @@
+{
+  "name": "tailwind/tailwind-typescript-react-rules",
+  "description": "Best practices for Tailwind CSS with TypeScript and React",
+  "version": "0.0.1",
+  "author": "Tailwind Team",
+  "tags": ["tailwind", "css", "typescript", "react", "styling"]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "ruby/ruby-clean-code-rules",
+  "description": "Best practices for Ruby clean code and TDD with RSpec",
+  "version": "0.0.1",
+  "author": "Ruby Team",
+  "tags": ["ruby", "clean-code", "tdd", "rspec", "testing"]
+}

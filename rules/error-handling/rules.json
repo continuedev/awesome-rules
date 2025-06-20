@@ -1,0 +1,7 @@
+{
+  "name": "error-handling/robust-error-handling-rules",
+  "description": "Best practices for robust error handling",
+  "version": "0.0.1",
+  "author": "Error Handling Team",
+  "tags": ["error-handling", "exceptions", "debugging", "reliability", "best-practices"]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "erlang/erlang-programming-rules",
+  "description": "Best practices for Erlang programming and OTP patterns",
+  "version": "0.0.1",
+  "author": "Erlang Team",
+  "tags": ["erlang", "otp", "concurrent-programming", "fault-tolerance", "functional"]
+}

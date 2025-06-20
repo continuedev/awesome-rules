@@ -1,0 +1,7 @@
+{
+  "name": "agent-enablement/ai-assistant-rules",
+  "description": "Best practices for AI assistant guidelines and agent enablement",
+  "version": "0.0.1",
+  "author": "Agent Enablement Team",
+  "tags": ["ai", "assistant", "agent", "guidelines", "best-practices"]
+}

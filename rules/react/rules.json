@@ -1,0 +1,7 @@
+{
+  "name": "react/react-component-architecture-rules",
+  "description": "Best practices for React component architecture",
+  "version": "0.0.1",
+  "author": "React Team",
+  "tags": ["react", "components", "frontend", "javascript", "architecture"]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "api-docs/openapi-rules",
+  "description": "Best practices for API documentation and OpenAPI standards",
+  "version": "0.0.1",
+  "author": "API Documentation Team",
+  "tags": ["api", "documentation", "openapi", "swagger", "rest"]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "terraform/terraform-iac-rules",
+  "description": "Best practices for Terraform Infrastructure as Code",
+  "version": "0.0.1",
+  "author": "Terraform Team",
+  "tags": ["terraform", "iac", "infrastructure", "devops", "cloud"]
+}

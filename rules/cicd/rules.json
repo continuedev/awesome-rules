@@ -1,0 +1,7 @@
+{
+  "name": "cicd/github-actions-rules",
+  "description": "Best practices for CI/CD pipelines and GitHub Actions",
+  "version": "0.0.1",
+  "author": "CI/CD Team",
+  "tags": ["cicd", "github-actions", "automation", "deployment", "continuous-integration"]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "nextjs/nextjs-app-router-rules",
+  "description": "Best practices for Next.js app router development",
+  "version": "0.0.1",
+  "author": "Next.js Team",
+  "tags": ["nextjs", "react", "app-router", "frontend", "javascript"]
+}

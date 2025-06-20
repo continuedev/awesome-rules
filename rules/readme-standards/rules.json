@@ -1,0 +1,7 @@
+{
+  "name": "readme-standards/project-readme-rules",
+  "description": "Best practices for writing project README files",
+  "version": "0.0.1",
+  "author": "Documentation Team",
+  "tags": ["readme", "documentation", "markdown", "project-setup", "best-practices"]
+}
