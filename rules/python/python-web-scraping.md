@@ -1,32 +1,34 @@
 ---
+name: Python Web Scraping
 description: Rules for writing web scraping in Python
+globs: "**/*.py"
 alwaysApply: false
 ---
-        
-You are an expert in web scraping and data extraction, with a focus on Python libraries and frameworks such as requests, BeautifulSoup, selenium, and advanced tools like jina, firecrawl, agentQL, and multion.
 
-Key Principles:
+# Python Web Scraping
+
+## Key Principles:
 - Write concise, technical responses with accurate Python examples.
 - Prioritize readability, efficiency, and maintainability in scraping workflows.
 - Use modular and reusable functions to handle common scraping tasks.
 - Handle dynamic and complex websites using appropriate tools (e.g., Selenium, agentQL).
 - Follow PEP 8 style guidelines for Python code.
 
-General Web Scraping:
+## General Web Scraping:
 - Use requests for simple HTTP GET/POST requests to static websites.
 - Parse HTML content with BeautifulSoup for efficient data extraction.
 - Handle JavaScript-heavy websites with selenium or headless browsers.
 - Respect website terms of service and use proper request headers (e.g., User-Agent).
 - Implement rate limiting and random delays to avoid triggering anti-bot measures.
 
-Text Data Gathering:
+## Text Data Gathering:
 - Use jina or firecrawl for efficient, large-scale text data extraction.
     - Jina: Best for structured and semi-structured data, utilizing AI-driven pipelines.
     - Firecrawl: Preferred for crawling deep web content or when data depth is critical.
 - Use jina when text data requires AI-driven structuring or categorization.
 - Apply firecrawl for tasks that demand precise and hierarchical exploration.
 
-Handling Complex Processes:
+## Handling Complex Processes:
 - Use agentQL for known, complex processes (e.g., logging in, form submissions).
     - Define clear workflows for steps, ensuring error handling and retries.
     - Automate CAPTCHA solving using third-party services when applicable.
@@ -34,13 +36,13 @@ Handling Complex Processes:
     - Examples: Finding the cheapest plane ticket, purchasing newly announced concert tickets.
     - Design adaptable, context-aware workflows for unpredictable scenarios.
 
-Data Validation and Storage:
+## Data Validation and Storage:
 - Validate scraped data formats and types before processing.
 - Handle missing data by flagging or imputing as required.
 - Store extracted data in appropriate formats (e.g., CSV, JSON, or databases such as SQLite).
 - For large-scale scraping, use batch processing and cloud storage solutions.
 
-Error Handling and Retry Logic:
+## Error Handling and Retry Logic:
 - Implement robust error handling for common issues:
     - Connection timeouts (requests.Timeout).
     - Parsing errors (BeautifulSoup.FeatureNotFound).
@@ -48,13 +50,13 @@ Error Handling and Retry Logic:
 - Retry failed requests with exponential backoff to prevent overloading servers.
 - Log errors and maintain detailed error messages for debugging.
 
-Performance Optimization:
+## Performance Optimization:
 - Optimize data parsing by targeting specific HTML elements (e.g., id, class, or XPath).
 - Use asyncio or concurrent.futures for concurrent scraping.
 - Implement caching for repeated requests using libraries like requests-cache.
 - Profile and optimize code using tools like cProfile or line_profiler.
 
-Dependencies:
+## Dependencies:
 - requests
 - BeautifulSoup (bs4)
 - selenium
@@ -65,7 +67,7 @@ Dependencies:
 - lxml (for fast HTML/XML parsing)
 - pandas (for data manipulation and cleaning)
 
-Key Conventions:
+## Key Conventions:
 1. Begin scraping with exploratory analysis to identify patterns and structures in target data.
 2. Modularize scraping logic into clear and reusable functions.
 3. Document all assumptions, workflows, and methodologies.

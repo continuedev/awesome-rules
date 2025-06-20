@@ -10,19 +10,22 @@ Rules are more than just suggestions; they’re essential building blocks that s
 
 ## Rules
 ### General
-- [Clean Code](./rules/clean-code)
+- [Agent Enablement](./rules/agent-enablement)
+- [Coding Standards](./rules/coding-standards)
+- [Error Handling](./rules/error-handling)
+- [Performance](./rules/performance)
+- [Security](./rules/security)
 - [Task Management](./rules/task-management/)
-<!-- Examples for General -->
-<!-- - **Coding Standards** - Enforce consistent code style and best practices -->
-<!-- - **Error Handling** - Guidelines for robust error handling patterns -->
-<!-- - **Performance** - Rules for writing efficient code -->
-<!-- - **Security** - Security-focused development practices -->
-<!-- - **Agent Enablement** - AI enablement and guidelines  -->
 
 ### Language Specific
+- [Erlang](./rules/erlang)
 - [Go](./rules/go)
+- [Lua](./rules/lua)
 - [Python](./rules/python)
 - [Ruby](./rules/go/)
+- [Rust](./rules/rust)
+- [TypeScript](./rules/typescript)
+- [Zig](./rules/zig)
 
 <!-- Examples for Language Specific -->
 <!-- - **Coding Standards** - Enforce consistent code style and best practices -->
@@ -32,38 +35,35 @@ Rules are more than just suggestions; they’re essential building blocks that s
 <!-- - **Agent Enablement** - AI enablement and guidelines  -->
 
 ### Framework Specific
-- [tailwind](./rules/tailwind) 
-- [trpc](./rules/trpc)
+- [Express](./rules/express)
+- [FastAPI](./rules/fastapi)
+- [Next.js](./rules/nextjs)
+- [React](./rules/react)
 - [Supabase](./rules/supabase)
+- [tailwind](./rules/tailwind)
+- [trpc](./rules/trpc)
+- [Vue.js](./rules/vue)
 - [Zuplo](./rules/zuplo/)
-
-<!-- Examples for Language Specific -->
-<!-- - **Coding Standards** - Enforce consistent code style and best practices -->
-<!-- - **Error Handling** - Guidelines for robust error handling patterns -->
-<!-- - **Performance** - Rules for writing efficient code -->
-<!-- - **Security** - Security-focused development practices -->
-<!-- - **Agent Enablement** - AI enablement and guidelines  -->
 
 ### Code Quality
 
 <!-- // remove examples after first contirbution. -->
 
-- **Linting Rules** - Integration with ESLint, Prettier, and other tools
+<!-- - **Linting Rules** - Integration with ESLint, Prettier, and other tools
 - **Type Safety** - Strict typing guidelines
 - **Code Review** - Automated code review suggestions
-- **Refactoring** - Safe refactoring patterns
+- **Refactoring** - Safe refactoring patterns -->
+
+- [Clean Code](./rules/clean-code)
 
 
 ### Documentation
 
-<!-- // remove examples after first contirbution. -->
-
-<!--- **API Documentation** - Standards for documenting APIs-->
-<!--- **Code Comments** - When and how to write effective comments-->
-<!--- **README Standards** - Project documentation guidelines-->
-<!--- **Changelog** - Maintaining project history-->
-
-- [post-mortems](./rules/postmortems)
+- [API Documentation](./rules/api-docs)
+- [Changelog](./rules/changelog)
+- [Code Comments](./rules/code-comments)
+- [Post-mortems](./rules/postmortems)
+- [README Standards](./rules/readme-standards)
 
 ### Testing
 
@@ -76,12 +76,10 @@ Rules are more than just suggestions; they’re essential building blocks that s
 
 ### DevOps
 
-<!-- // remove examples after first contirbution. -->
-
-- **CI/CD** - Continuous integration and deployment rules
-- **Docker** - Container best practices
-- **Infrastructure** - Infrastructure as code guidelines
-- **Monitoring** - Observability and logging standards
+- [CI/CD](./rules/cicd)
+- [Docker](./rules/docker)
+- [Monitoring](./rules/monitoring)
+- [Terraform](./rules/terraform)
 
 ## Using Rules Locally
 
