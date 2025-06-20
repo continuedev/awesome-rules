@@ -10,8 +10,8 @@ Rules are more than just suggestions; they’re essential building blocks that s
 
 ## Rules
 ### General
+- [Clean Code](./rules/clean-code)
 - [Task Management](./rules/task-management/)
-
 <!-- Examples for General -->
 <!-- - **Coding Standards** - Enforce consistent code style and best practices -->
 <!-- - **Error Handling** - Guidelines for robust error handling patterns -->
@@ -20,7 +20,9 @@ Rules are more than just suggestions; they’re essential building blocks that s
 <!-- - **Agent Enablement** - AI enablement and guidelines  -->
 
 ### Language Specific
-- [Ruby](.rules/ruby/)
+- [Go](./rules/go)
+- [Python](./rules/python)
+- [Ruby](./rules/go/)
 
 <!-- Examples for Language Specific -->
 <!-- - **Coding Standards** - Enforce consistent code style and best practices -->
@@ -30,7 +32,10 @@ Rules are more than just suggestions; they’re essential building blocks that s
 <!-- - **Agent Enablement** - AI enablement and guidelines  -->
 
 ### Framework Specific
-- [Zuplo](.rules/zuplo/)
+- [tailwind](./rules/tailwind) 
+- [trpc](./rules/trpc)
+- [Supabase](./rules/supabase)
+- [Zuplo](./rules/zuplo/)
 
 <!-- Examples for Language Specific -->
 <!-- - **Coding Standards** - Enforce consistent code style and best practices -->
