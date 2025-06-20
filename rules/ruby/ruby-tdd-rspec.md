@@ -1,6 +1,5 @@
 ---
 name: Test-Driven Development in Ruby
-description: Always use test-driven development (TDD) for Ruby projects.
 ---
 ## Rules
 
