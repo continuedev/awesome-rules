@@ -1,7 +1,7 @@
 {
   "name": "awesome-rules",
-  "description": "",
-  "author": "",
+  "description": "A collection of useful rules for coding assistants",
+  "author": "bdougie",
   "license": "CC0-1.0",
   "version": "1.0.0",
   "rules": {}
