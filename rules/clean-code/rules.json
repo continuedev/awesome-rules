@@ -1,0 +1,8 @@
+{
+  "name": "continuedev/clean-code-rules",
+  "description": "Rules for writing clean code",
+  "author": "Continue Dev, Inc.",
+  "license": "CC0-1.0",
+  "version": "1.0.0",
+  "rules": {}
+}
