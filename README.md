@@ -40,14 +40,12 @@ Rules are more than just suggestions; they’re essential building blocks that s
 
 ### Code Quality
 
-<!-- // remove examples after first contirbution. -->
-
-<!-- - **Linting Rules** - Integration with ESLint, Prettier, and other tools
-- **Type Safety** - Strict typing guidelines
-- **Code Review** - Automated code review suggestions
-- **Refactoring** - Safe refactoring patterns -->
-
 - [Clean Code](./rules/clean-code)
+- [ESLint Configuration](./rules/eslint-config)
+- [Prettier Formatting](./rules/prettier-standards)
+- [Type Safety Guidelines](./rules/type-safety)
+- [Code Review Standards](./rules/code-review)
+- [Refactoring Patterns](./rules/refactoring-patterns)
 
 
 ### Documentation
@@ -60,12 +58,14 @@ Rules are more than just suggestions; they’re essential building blocks that s
 
 ### Testing
 
-<!-- // remove examples after first contirbution. -->
-
-- **Unit Testing** - Test structure and coverage guidelines
-- **Integration Testing** - End-to-end testing patterns
-- **Test Data** - Managing test fixtures and mocks
-- **TDD Guidelines** - Test-driven development practices
+- [Jest Testing](./rules/jest-testing)
+- [Unit Testing Guidelines](./rules/unit-testing)
+- [Integration Testing](./rules/integration-testing)
+- [End-to-End Testing](./rules/e2e-testing)
+- [Test Data Management](./rules/test-data)
+- [TDD Guidelines](./rules/tdd-guidelines)
+- [Cypress Testing](./rules/cypress-testing)
+- [React Testing Library](./rules/react-testing-library)
 
 ### DevOps
 
