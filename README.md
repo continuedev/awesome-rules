@@ -27,13 +27,6 @@ Rules are more than just suggestions; they’re essential building blocks that s
 - [TypeScript](./rules/typescript)
 - [Zig](./rules/zig)
 
-<!-- Examples for Language Specific -->
-<!-- - **Coding Standards** - Enforce consistent code style and best practices -->
-<!-- - **Error Handling** - Guidelines for robust error handling patterns -->
-<!-- - **Performance** - Rules for writing efficient code -->
-<!-- - **Security** - Security-focused development practices -->
-<!-- - **Agent Enablement** - AI enablement and guidelines  -->
-
 ### Framework Specific
 - [Express](./rules/express)
 - [FastAPI](./rules/fastapi)
