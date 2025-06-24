@@ -33,6 +33,7 @@ Rules are more than just suggestions; they’re essential building blocks that s
 - [Next.js](./rules/nextjs)
 - [React](./rules/react)
 - [Supabase](./rules/supabase)
+- [LanceDB](./rules/lancedb/)
 - [tailwind](./rules/tailwind)
 - [trpc](./rules/trpc)
 - [Vue.js](./rules/vue)
