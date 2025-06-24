@@ -1,0 +1,7 @@
+{
+  "name": "lancedb/best-practices",
+  "description": "Best practices for using LanceDB, based on official documentation.",
+  "version": "0.0.1",
+  "author": "LanceDB Community",
+  "tags": ["lancedb", "vector-db", "multimodal-database"]
+} 
