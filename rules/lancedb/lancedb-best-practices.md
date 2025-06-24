@@ -6,7 +6,7 @@ name: LanceDB Best Practices
 - Define your table schema using PyArrow or Pydantic models (not plain dicts).
 - Validate data types and vector shapes before inserting.
 - Use batch inserts for efficiency.
-- Use filters in queries to narrow results.
+- Use metadata filters in queries to narrow results if possible.
 
 ## Example: Schema Definition
 
@@ -59,7 +59,7 @@ row = {
     "name": "example",
     "embedding": np.random.rand(128).astype(np.float32).tolist()
 }
-table.insert([row])
+table.add([row])
 ```
 
 ### Example: Querying
