@@ -22,7 +22,7 @@ Rules are more than just suggestions; they’re essential building blocks that s
 - [Go](./rules/go)
 - [Lua](./rules/lua)
 - [Python](./rules/python)
-- [Ruby](./rules/go/)
+- [Ruby](./rules/ruby/)
 - [Rust](./rules/rust)
 - [TypeScript](./rules/typescript)
 - [Zig](./rules/zig)
