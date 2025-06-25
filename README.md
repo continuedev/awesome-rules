@@ -67,6 +67,7 @@ Rules are more than just suggestions; they’re essential building blocks that s
 - [TDD Guidelines](./rules/tdd-guidelines)
 - [Cypress Testing](./rules/cypress-testing)
 - [React Testing Library](./rules/react-testing-library)
+- [Recurse ML](./rules/recurse-ml/rml-verify.mdc)
 
 ### DevOps
 
