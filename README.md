@@ -38,6 +38,7 @@ Rules are more than just suggestions; they’re essential building blocks that s
 - [trpc](./rules/trpc)
 - [Vue.js](./rules/vue)
 - [Zuplo](./rules/zuplo/)
+- [cognee](./rules/cognee/)
 
 ### Code Quality
 

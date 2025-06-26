@@ -1,0 +1,14 @@
+{
+    "name": "cognee/cognee-development-rules",
+    "description": "Best practices for working with Cognee knowledge graph and memory system",
+    "version": "1.0.0",
+    "author": "Cognee Team",
+    "tags": [
+        "cognee",
+        "knowledge-graph",
+        "memory",
+        "search",
+        "mcp",
+        "ai-agents"
+    ]
+}
