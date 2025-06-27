@@ -1,0 +1,7 @@
+{
+  "name": "code-review/diff-review-rules",
+  "description": "Best practices for thorough code review and diff analysis",
+  "version": "0.0.1",
+  "author": "Code Review Team",
+  "tags": ["code-review", "diff", "quality", "performance", "security", "accessibility"]
+}
