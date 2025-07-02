@@ -27,6 +27,7 @@ This ruleset provides best practices for using Cognee MCP tools in chat environm
 - **cognify_status/codify_status**: Monitor background processes
 - **get_developer_rules**: Retrieve generated coding rules
 - **save_interaction**: Store user-agent interactions for rule generation
+- **cognee_add_developer_rules**: Ingest core developer rules files to cognee
 - **prune**: Reset knowledge graph (use carefully)
 
 Apply these rules to build effective, searchable knowledge graphs. 
